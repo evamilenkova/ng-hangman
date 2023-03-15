@@ -1,0 +1,14 @@
+.hangman{
+    display: flex;
+    max-width: 950px;
+    flex-direction: column;
+    align-items: center;
+}
+.restart{
+    margin-top:30px;
+}
+
+ p{ 
+    text-align: center;
+
+}

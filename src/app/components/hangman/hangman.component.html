@@ -1,0 +1,13 @@
+<div id="category">
+<p>Category: {{category}}</p>
+</div>
+<div class="hangman">
+
+<app-hangman-display [guesses]="guesses" [question]="question" (gameFinished)="onGameFinished()"></app-hangman-display>
+<app-hangman-question  *ngIf="gameFinishedButtonShown===false" [guesses]="guesses" [question]="question"></app-hangman-question>
+<app-hangman-keyboard  *ngIf="gameFinishedButtonShown===false"  [question]="question" (keyPressed)="guess($event)"></app-hangman-keyboard>
+
+<div class="restart">
+<button class="btn" *ngIf="gameFinishedButtonShown===true"  (click)="reset()">RESTART GAME</button>
+</div>
+</div>

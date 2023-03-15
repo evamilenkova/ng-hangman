@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    outline: none;
+}
+html,body{
+
+margin:0;
+padding:0;
+font-family: 'Golos Text', sans-serif;
+}
+
+.btn{
+    border-radius: 4px;
+    min-width: 36px;
+    min-height: 36px;
+    background-color:  rgb(170,10,170);
+    color:white;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+  
+   
+    
+}
+.btn:hover:not(.btn--disabled) {
+
+    background-color: #dcdcdc;
+    color:rgb(170,10,170);
+}
+
+.btn--disabled{
+    background-color: #dcdcdc;
+    color:gray;
+    cursor: default;
+}

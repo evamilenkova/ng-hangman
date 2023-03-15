@@ -1,0 +1,17 @@
+.mistakes_count{
+    text-align: center;
+}
+
+.man-animation{
+    animation: anim 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anim {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(0px,15px)
+    }
+}
